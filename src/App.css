@@ -3,3 +3,6 @@ img{
     height: 500px;
     align-items: center;
 }
+body{
+    background-image: url('../public/logo512.png');
+}
