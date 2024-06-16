@@ -1,0 +1,245 @@
+/* Common CSS */
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: Verdana, sans-serif;
+}
+
+a {
+    text-decoration: none;
+    /* color:lightcyan;
+    font-weight: 600;
+    font-size: 0.9rem; */
+  }
+  
+  li {
+    list-style-type: none;
+  }
+  
+  /* NavBar_1 */
+
+.navbar_1{ 
+    width: 100%;
+    height: 55px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #448f74;
+    position: fixed;
+    z-index: 12;
+}
+/* clinic_logo */
+.clinic_logo{
+    width: 45%;
+    height: 55px;
+}
+.clinic_logo img{
+    width:35%;
+    height: 100%;
+}
+
+/* nav_list */
+.nav_list{
+    width: 32%;
+}
+.nav_list ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+ .nav_list li{
+    font-size: 1.01rem;
+    color: #fdfcf3;
+    font-family: Verdana,sans-serif;
+    font-weight: 500;
+    padding: 5px;
+    border-radius: 4px;
+    cursor: pointer;
+ }
+/* nav_list li Hover */
+.nav_list li:hover {
+    background-color: #6fbea1;
+    color: #fff7b1;
+    transition: 0.3s ease;
+}
+
+/* switch_btn */
+.switch_btn{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 15%;
+}
+.switch_btn button{
+    padding: 7px;
+    border: none;
+    border-radius: 4px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    box-shadow: 0px 4px 4px 1px rgba(0,0,0, 0.2),0px 2px 2px 1px rgba(0,0,0,0.2);
+    font-family: monospace;
+    cursor: pointer;
+}
+.switch_btn button:nth-child(1){
+    background-color: #a5e7ff;
+    color: #031d2a;
+   
+}
+.switch_btn button:nth-child(2){
+    background-color: #eb3d3d;
+    color: #efe9de;
+}
+
+/* buttton hover */
+.switch_btn button:nth-child(2):hover{
+    background-color: rgb(255, 39, 39);
+}
+.switch_btn button:nth-child(1):hover{
+    background-color: #bbe7f7;
+}
+/* menu_bar */
+    input[type=checkbox]{
+        display: none;
+    }
+    .hamburger{
+        display: none;
+        padding: 3px;
+        color: #efe9de;
+        font-size: 1rem;
+    }
+
+
+
+/* responsive with media Query */
+/* for under 1100px screen */
+@media(max-width:1100px){
+    .navbar_1{
+        width: 100%;
+        height: 50px;
+    }
+    .clinic_logo{
+        width: 30%;
+        height: 50px;
+    }
+    .clinic_logo img{
+        width: 60%;
+        height: 100%;
+    }
+    .nav_list{
+        width: 45%;
+    }
+    .nav_list li{
+        font-size: 0.93rem;
+        padding: 5px;
+    }
+    .switch_btn{
+        width: 25%;
+    }
+    .switch_btn button{
+        padding: 5px;
+        font-size: 0.85rem;
+        font-weight: 550;
+    }
+}
+
+/* for under 725 px screeen */
+
+    @media(max-width:725px){
+        .navbar_1{
+            width: 100%;
+            height: 45px;
+
+        }
+        .clinic_logo{
+            width: 50%;
+            height: 45px;
+        }
+        .clinic_logo img{
+            width: 70%;
+            height: 100%;
+        }
+        .switch_btn{
+            width: 45%;
+        }
+        .switch_btn button{
+            padding: 4px;
+            font-size: 0.75rem;
+            font-weight: 500;
+        }
+        .nav_list li{
+            font-size: 0.83rem;
+            padding: 3px;
+        }
+        .nav_list ul{
+            position: absolute;
+            display: none;
+            width: 100%;
+            background-color: #6fbea1;
+            right: 0;
+            left: 0;
+            top: 45px;
+            text-align: center;
+            transition: 1s ease;
+           
+        }
+        .hamburger{
+            display: block;
+        }
+        input[type=checkbox]:checked~.nav_list {
+           display: block;
+          }
+        
+    }
+
+    /* for under 400px screen */
+    @media(max-width:400px){
+        .navbar_1{
+            width: 100%;
+            height: 40px;
+
+        }
+        .clinic_logo{
+            width: 50%;
+            height: 40px;
+        }
+        .clinic_logo img{
+            width: 90%;
+            height: 100%;
+        }
+        .switch_btn{
+            width: 45%;
+            right: 20px;
+            position: fixed;
+            transition: 0.5s ease;
+        }
+        .switch_btn button{
+            padding: 2px;
+            font-size: 0.7rem;
+            font-weight: 500;
+        }
+        .nav_list li{
+            font-size: 0.75rem;
+            padding: 2px;
+        }
+        .nav_list ul{
+            position: absolute;
+            display: none;
+            width: 100%;
+            background-color: #6fbea1;
+            right: 0;
+            left: 0;
+            top: 40px;
+            text-align: center;
+            transition: 1s ease;
+           
+        }
+        .hamburger{
+            display: block;
+            font-size: 0.9rem;
+        }
+        input[type=checkbox]:checked~.nav_list {
+           display: block;
+          }
+        
+    }

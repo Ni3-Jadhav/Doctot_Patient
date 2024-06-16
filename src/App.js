@@ -1,9 +1,10 @@
-import Exppage from "./Pages/expComp";
+import HomePage from "./Pages/HomePage";
+
 
 const App =()=>{
     return(
         <>
-        {<Exppage/>}
+       {<HomePage/>}
         </>
     )
 }
