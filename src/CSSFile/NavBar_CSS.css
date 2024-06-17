@@ -53,7 +53,7 @@ li {
 }
 
 .menu_list li {
-    font-size: 1rem;
+    font-size: 1.01rem;
     color: #fffdf3;
     font-family: Verdana, sans-serif;
     font-weight: 500;
@@ -145,7 +145,7 @@ input[type=checkbox] {
     }
 
     .menu_list li {
-        font-size: 0.88rem;
+        font-size: 0.91rem;
         padding: 5px;
     }
 
@@ -278,4 +278,168 @@ input[type=checkbox] {
         display: block;
     }
 
+}
+
+
+
+/* Navbar_2 */
+.navbar_2 {
+    width: 100%;
+    height: 55px;
+    position: fixed;
+    top: 50px;
+    background-color: #bce5d633;
+}
+
+.list_2 {
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.list_2 li {
+    padding: 5px;
+    width: 20%;
+    font-family: Verdana, sans-serif;
+    font-size: 1.01rem;
+    font-weight: 500;
+    position: relative;
+    color: #000000;
+    cursor: pointer;
+}
+
+.list_2 li:hover {
+    color: #022b3f;
+}
+
+.dropdown_list {
+    position: absolute;
+    display: none;
+    padding: 10px;
+    background-color: #bce5d633;
+    transition: all 0.5s ease;
+    top: 40px;
+}
+
+.list_2 li:nth-child(2):hover #dropdown_1 {
+    display: block;
+}
+
+.list_2 li:nth-child(4):hover #dropdown_2 {
+    display: block;
+}
+
+.dropdown_list li {
+    font-size: 0.95rem;
+    font-family: Verdana, sans-serif;
+    color: #000000;
+}
+
+#dropdown_1 li:hover {
+    color: #022b3f;
+    text-decoration: underline;
+}
+
+#dropdown_2 li:hover {
+    color: #022b3f;
+    text-decoration: underline;
+}
+
+/* for 950px screen in Navbar_2 */
+@media(max-width:950px) {
+    .navbar_2 {
+        position: fixed;
+        width: 100%;
+        height: 50px;
+        top: 45px;
+    }
+
+    .list_2 {
+        width: 100%;
+        height: 100%;
+        padding: 7px;
+    }
+
+    .list_2 li {
+        font-size: 0.91rem;
+    }
+
+    .dropdown_list {
+        padding: 7px;
+        position: absolute;
+        top: 35px;
+    }
+
+    .dropdown_list li {
+        font-size: 0.82rem;
+    }
+}
+
+/* for 650px screen in Navbar_2 */
+@media(max-width:650px) {
+    .navbar_2 {
+        position: fixed;
+        width: 100%;
+        height: 45px;
+        top: 40px;
+    }
+
+    .list_2 {
+        width: 100%;
+        height: 100%;
+        padding: 4px;
+
+    }
+
+    .list_2 li {
+        font-size: 0.8rem;
+    }
+
+    .dropdown_list {
+        padding: 4px;
+        position: absolute;
+        top: 30px;
+        height: 150px;
+        overflow-y: scroll;
+    }
+
+    .dropdown_list li {
+        font-size: 0.71rem;
+    }
+}
+
+/* for 450px screen in Navbar_2 */
+@media(max-width:450px) {
+    .navbar_2 {
+        position: fixed;
+        width: 100%;
+        height: 40px;
+        top: 40px;
+    }
+
+    .list_2 {
+        width: 100%;
+        height: 100%;
+        padding: 2px;
+
+    }
+
+    .list_2 li {
+        font-size: 0.8rem;
+    }
+
+    .dropdown_list {
+        padding: 2px;
+        position: absolute;
+        top: 40px;
+        height: 100px;
+        overflow-y: scroll;
+    }
+
+    .dropdown_list li {
+        font-size: 0.65rem;
+    }
 }
