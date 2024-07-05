@@ -1,0 +1,670 @@
+body {
+    background-color: rgb(240, 252, 255);
+}
+
+.home-page {
+    width: 100%;
+    position: relative;
+    top: 110px;
+    transition: 0.3s ease;
+}
+
+
+.box {
+    margin: 0 5%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+    height: 250px;
+}
+
+.box img {
+    width: 25%;
+    height: 90%;
+}
+
+.box-content {
+    width: 75%;
+    height: 100%;
+    background-color: #f7ffff;
+}
+
+.box-content .text {
+    margin: 10px;
+    padding: 10px;
+    height: 100%;
+    text-align: justify;
+    color: #010136;
+    background-color: #e5fff6;
+    box-shadow: 0px 5px 20px 1px rgba(0, 0, 0, 0.1), 0px 3px 20px 1px rgba(0, 0, 0, 0.1);
+}
+
+.text p {
+    height: 40%;
+    margin: 7px;
+    font-size: 0.88rem;
+    overflow: auto;
+}
+
+.text button {
+    border: none;
+    padding: 15px 30px;
+    font-size: 1.1rem;
+    border-radius: 4px;
+    color: #fffdf3;
+    background-color: #448f74;
+    transition: 0.3s ease;
+}
+
+.text button:hover {
+    background-color: #448f7436;
+    color: #010136
+}
+
+.box_1 {
+    width: 90%;
+    height: 600px;
+    margin: 2% 5%;
+    position: relative;
+}
+
+.box_1 h2 {
+    margin: 30px auto 10px;
+    padding: 10px 30px;
+    width: fit-content;
+    color: #010136;
+    text-align: center;
+}
+
+.box_1 p {
+    margin: 5px 10px;
+    line-height: 2;
+    font-size: 1.1rem;
+    padding: 20px 45px;
+    background-color: #e5fff6;
+    color: #010136;
+
+}
+
+.box_1 p button {
+    border: none;
+    padding: 15px 30px;
+    font-size: 1.1rem;
+    border-radius: 4px;
+    color: #fffdf3;
+    background-color: #448f74;
+    transition: 0.3s ease;
+}
+
+.box_1 p button:last-child {
+    margin: 0px 30px;
+    background-color: #448f7436;
+    color: #010136;
+}
+
+.box_1 p button:hover {
+    background-color: #448f7436;
+    color: #010136;
+}
+
+.box_1 p button:last-child:hover {
+    background-color: #e5fff6;
+}
+
+.camp_img {
+    width: 100%;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f7ffff;
+}
+
+.camp_img div {
+    width: 22%;
+    height: 90%;
+    margin: 10px;
+    box-shadow: 0px 5px 20px 1px rgba(0, 0, 0, 0.1), 0px 3px 20px 1px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    transition: 0.3s ease;
+}
+
+.camp_img h4 {
+    padding: 10px;
+    font-size: 1.1rem;
+    font-weight: normal;
+    line-height: 1.5;
+    text-align: center;
+    color: #010136;
+}
+
+.camp_img div:hover {
+    width: 22.5%;
+    height: 91%;
+    margin: 7px;
+}
+
+.box_2 {
+    width: 90%;
+    margin: 2% 5%;
+    position: relative;
+}
+
+.box_2 h2 {
+    width: 100%;
+    padding: 40px 45px 25px;
+    line-height: 2.2;
+    color: #010136;
+    text-align: justify;
+}
+
+.box_2_content {
+    width: 100%;
+    height: 300px;
+    margin-bottom: 50px;
+    display: flex;
+    align-items: center;
+}
+
+.box_2_img,
+.box_2_text {
+    width: 50%;
+}
+
+.box_2_img img {
+    width: 60%;
+    height: 225px;
+    margin: 0 20%;
+    border-radius: 3px;
+    transition: all 0.5s ease;
+}
+
+.box_2_text {
+    height: 100%;
+    text-align: justify;
+    margin: auto 10px;
+    padding: 25px;
+    line-height: 1.9;
+    font-size: 1.1rem;
+    color: #010136;
+}
+
+.box_2_text p {
+    height: 80%;
+    overflow: auto;
+}
+
+.box_2 button {
+    border: none;
+    padding: 15px 30px;
+    font-size: 1.1rem;
+    border-radius: 4px;
+    margin: 0px 30px 30px;
+    background-color: #d5fff1;
+    color: #010136;
+}
+
+.box_2 button:hover {
+    background-color: rgb(240, 252, 255);
+}
+
+.box_2_img img:hover {
+    box-shadow: 0px 5px 20px 1px rgba(0, 0, 0, 0.1), 0px 3px 20px 1px rgba(0, 0, 0, 0.1);
+}
+
+/* responsive home page */
+/* for Screen Max width 1200px */
+@media(max-width:1200px) {
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    h2 {
+        font-size: 1.3rem;
+    }
+
+    h3 {
+        font-size: 1rem;
+    }
+
+    button {
+        padding: 13px 25px;
+        font-size: 0.95rem;
+    }
+
+    .home-page {
+        position: relative;
+        top: 105px;
+    }
+
+    .box {
+        max-height: 225px;
+    }
+
+    .box-content .text {
+        margin: 13px;
+    }
+
+    .text p {
+        margin: 6px;
+        font-size: 0.83rem;
+    }
+
+    .text button {
+        padding: 13px 25px;
+        font-size: 0.95rem;
+    }
+
+    .box_1 {
+        max-height: 550px;
+    }
+
+    .box_1 h2 {
+        margin: 25px auto 15px;
+        padding: 10px 25px;
+    }
+
+    .box_1 p {
+        margin: 4px 8px;
+        line-height: 1.7;
+        font-size: 0.95rem;
+        padding: 17px 40px;
+    }
+
+    .box_1 p button {
+        padding: 13px 25px;
+        font-size: 0.95rem;
+    }
+
+    .box_1 p button:last-child {
+        margin: 0px 25px;
+    }
+
+    .camp_img {
+        height: 275px;
+    }
+
+    .camp_img div {
+        margin: 8.5px;
+    }
+
+    .camp_img h4 {
+        font-size: 0.97rem;
+        line-height: 1.4;
+        padding: 8.5px;
+    }
+
+    .box_2 h2 {
+        padding: 40px 40px 20px;
+        line-height: 1.7;
+    }
+
+    .box_2_content {
+        width: 100%;
+        height: 275px;
+        margin-bottom: 40px;
+    }
+
+    .box_2_img img {
+        width: 60%;
+        height: 200px;
+    }
+
+    .box_2_text {
+        margin: auto 8.5px;
+        padding: 20px;
+        line-height: 1.4;
+        font-size: 0.95rem;
+    }
+
+    .box_2 button {
+        padding: 13px 25px;
+        font-size: 0.95rem;
+        margin: 0px 25px 25px;
+    }
+}
+
+/* for Sreen Max Width 900px */
+@media(max-width:900px) {
+    h1 {
+        font-size: 1.1rem;
+    }
+
+    h2 {
+        font-size: 0.95rem;
+    }
+
+    h3 {
+        font-size: 0.85rem;
+    }
+
+    button {
+        padding: 9px 17px;
+        font-size: 0.83rem;
+    }
+
+    .home-page {
+        position: relative;
+        top: 95px;
+    }
+
+    .box {
+        height: 190px;
+    }
+
+    .box-content .text {
+        margin: 9px;
+    }
+
+    .text p {
+        margin: 5px;
+        font-size: 0.73rem;
+    }
+
+    .text button {
+        padding: 9px 17px;
+        font-size: 0.83rem;
+    }
+
+    .box_1 {
+        max-height: 450px;
+    }
+
+    .box_1 h2 {
+        margin: 22px auto 13px;
+        padding: 8.5px 20px;
+    }
+
+    .box_1 p {
+        margin: 3px 6.5px;
+        line-height: 1.4;
+        font-size: 0.83rem;
+        padding: 13px 30px;
+    }
+
+    .box_1 p button {
+        padding: 9px 17px;
+        font-size: 0.83rem;
+    }
+
+    .box_1 p button:last-child {
+        margin: 0px 20px;
+    }
+
+    .camp_img {
+        height: 235px;
+    }
+
+    .camp_img div {
+        margin: 7px;
+    }
+
+    .camp_img h4 {
+        font-size: 0.85rem;
+        line-height: 1.4;
+        padding: 7px;
+    }
+
+    .box_2 h2 {
+        padding: 30px 35px 20px;
+        line-height: 1.9;
+    }
+
+    .box_2_content {
+        width: 100%;
+        height: 245px;
+        margin-bottom: 20px;
+    }
+
+    .box_2_img img {
+        width: 60%;
+        height: 170px;
+    }
+
+    .box_2_text {
+        margin: auto 7px;
+        padding: 17px;
+        line-height: 1.2;
+        font-size: 0.83rem;
+    }
+
+    .box_2 button {
+        padding: 9px 17px;
+        font-size: 0.83rem;
+        margin: 0px 17px 17px;
+    }
+}
+
+/* For Sreen Max Width 680px */
+@media(max-width:680px) {
+    h1 {
+        font-size: 0.95rem;
+    }
+
+    h2 {
+        font-size: 0.87rem;
+    }
+
+    h3 {
+        font-size: 0.78rem;
+    }
+
+    button {
+        padding: 6px 12px;
+        font-size: 0.7rem;
+    }
+
+    .home-page {
+        position: relative;
+        top: 90px;
+    }
+
+    .box {
+        height: 150px;
+    }
+
+    .box img {
+        height: 70%;
+    }
+
+    .box-content .text {
+        margin: 6px;
+    }
+
+    .text p {
+        margin: 4px;
+        font-size: 0.67rem;
+    }
+
+    .text button {
+        padding: 6px 12px;
+        font-size: 0.7rem;
+    }
+
+    .box_1 {
+        max-height: 375px;
+    }
+
+    .box_1 h2 {
+        margin: 20px auto 10px;
+        padding: 7.5px 17px;
+    }
+
+    .box_1 p {
+        margin: 2.5px 5.5px;
+        line-height: 1.5;
+        font-size: 0.67rem;
+        padding: 10px 20px;
+    }
+
+    .box_1 p button {
+        padding: 6px 12px;
+        font-size: 0.7rem;
+    }
+
+    .box_1 p button:last-child {
+        margin: 0px 15px;
+    }
+
+    .camp_img {
+        height: 175px;
+    }
+
+    .camp_img div {
+        margin: 5.5px;
+    }
+
+    .camp_img h4 {
+        font-size: 0.71rem;
+        line-height: 1.2;
+        padding: 5.5px;
+    }
+
+    .box_2 h2 {
+        padding: 20px 30px 15px;
+        line-height: 1.9;
+    }
+
+    .box_2_content {
+        width: 100%;
+        height: 200px;
+        margin-bottom: 15px;
+    }
+
+    .box_2_img img {
+        width: 60%;
+        height: 110px;
+    }
+
+    .box_2_text {
+        margin: auto 5.5px;
+        padding: 12px;
+        line-height: 1.2;
+        font-size: 0.67rem;
+    }
+
+    .box_2 button {
+        padding: 6px 12px;
+        font-size: 0.7rem;
+        margin: 0px 12px 12px;
+    }
+}
+
+/* For Sreen Max Width 425px */
+@media(max-width:425px) {
+    h1 {
+        font-size: 0.75rem;
+    }
+
+    h2 {
+        font-size: 0.7rem;
+    }
+
+    h3 {
+        font-size: 0.65rem;
+    }
+
+    button {
+        padding: 3px 8px;
+        font-size: 0.55rem;
+    }
+
+    .home-page {
+        position: relative;
+        top: 90px;
+    }
+
+    .box img {
+        height: 60%;
+    }
+
+    .box {
+        height: 110px;
+    }
+
+    .box-content .text {
+        margin: 2px;
+    }
+
+    .text p {
+        margin: 2px;
+        font-size: 0.52rem;
+    }
+
+    .text button {
+        padding: 3px 8px;
+        font-size: 0.55rem;
+    }
+
+    .box_1 {
+        max-height: 450px;
+    }
+
+    .box_1 h2 {
+        margin: 20px auto 10px;
+        padding: 7.5px 17px;
+    }
+
+    .box_1 p {
+        margin: 2.5px 5.5px;
+        line-height: 1.5;
+        font-size: 0.57rem;
+        padding: 10px 20px;
+    }
+
+    .box_1 p button {
+        padding: 6px 12px;
+        font-size: 0.55rem;
+    }
+
+    .box_1 p button:last-child {
+        margin: 0px 13px;
+    }
+
+    .camp_img {
+        max-height: 275px;
+    }
+
+    .camp_img div {
+        margin: 5px;
+    }
+
+    .camp_img h4 {
+        font-size: 0.6rem;
+        line-height: 1.2;
+        padding: 5.5px;
+        overflow: auto;
+    }
+
+    .box_2 h2 {
+        padding: 20px 20px 15px;
+        line-height: 1.9;
+    }
+
+    .box_2_content {
+        width: 100%;
+        height: 230px;
+        margin-bottom: 15px;
+    }
+
+    .box_2_img img {
+        width: 60%;
+        max-height: 100px;
+    }
+
+    .box_2_text {
+        margin: auto 5.5px;
+        padding: 12px;
+        line-height: 1.2;
+        font-size: 0.52rem;
+    }
+
+    .box_2 button {
+        padding: 6px 12px;
+        font-size: 0.55rem;
+        margin: 0px 12px 12px;
+    }
+}

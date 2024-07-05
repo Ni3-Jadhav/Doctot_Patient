@@ -1,3 +1,4 @@
+import '../CSSFile/NavBar_CSS.css';
 const NavBarFirst = () => {
     return (
         <>
