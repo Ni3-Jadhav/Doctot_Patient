@@ -1,5 +1,5 @@
 import '../CSSFile/Home_CSS.css';
-import imgUrl from '../images/consel_1.jpeg'
+import imgUrl from '../images/consel_1.jpeg';
 
 const HomeComp = () => {
     return (
