@@ -1,0 +1,349 @@
+/* Patient Rag Form */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, sans-serif;
+}
+
+.footer {
+    position: relative;
+    top: 55px;
+}
+
+.body-box {
+    background-image: url('../images/healthCenter2.jpeg');
+    /* Add your background image here */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    top: 55px;
+    filter: brightness(0.9);
+}
+
+.heading-msg {
+    text-align: center;
+    padding: 3%;
+    color: #010136;
+    font-family: Verdana, sans-serif;
+    background-color: #d0eeffa1;
+    line-height: 2;
+}
+
+.heading-msg .quote {
+    width: 90%;
+    margin: 1% auto;
+    padding: 2%;
+    font-size: 1rem;
+    font-style: italic;
+    color: #010136;
+    text-align: center;
+}
+
+.registration-container {
+    display: flex;
+    padding: 5% 0%;
+    justify-content: center;
+    align-items: center;
+}
+
+.registration-img {
+    max-width: 400px;
+    height: 380px;
+    transition: max-width 0.3s ease-in-out, height 0.3s ease-in-out;
+}
+
+.registration-img img {
+    border-radius: 5px 0px 0px 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    height: 100%;
+}
+
+.registration-form {
+    background: rgba(240, 252, 255, 0.884);
+    /* Light blue background with opacity */
+    padding: 20px;
+    border-radius: 0px 5px 5px 0px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+    height: 380px;
+    transition: transform 0.3s ease-in-out, max-width 0.3s ease-in-out, height 0.3s ease-in-out, border-radius 0.3s ease-in-out;
+}
+
+.registration-form:hover {
+    transform: scale(1.02);
+    border-radius: 5px;
+}
+
+.registration-form h2 {
+    color: #010136;
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.form-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    width: 92%;
+    margin: 0% 4% 2%;
+    color: #010136;
+    font-size: 1rem;
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group input[type="tel"] {
+    width: 92%;
+    margin: 0 4%;
+    padding: 8px;
+    border: none;
+    border-radius: 4px;
+    font-size: 0.9rem;
+    transition: border-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.form-group input[type="text"]:focus,
+.form-group input[type="email"]:focus,
+.form-group input[type="tel"]:focus {
+    border: 1px solid #448f74;
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.gender-options {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+
+.gender-options label {
+    color: #010136;
+    font-size: 0.91rem;
+    text-align: center;
+}
+
+.registration-form button {
+    display: block;
+    width: 46%;
+    margin: 0% 2%;
+    padding: 10px;
+    background-color: #448f74;
+    color: #fffdf3;
+    border: none;
+    border-radius: 4px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.registration-form button:hover {
+    background-color: #357c62;
+    transform: translateY(-3px);
+}
+
+@media (max-width: 1100px) {
+    h2 {
+        font-size: 1.2rem;
+    }
+
+    h3 {
+        font-size: 1rem;
+    }
+
+    .heading-msg .quote {
+        font-size: 0.95rem;
+    }
+
+    .body-box {
+        position: relative;
+        top: 50px;
+    }
+
+    .footer {
+        position: relative;
+        top: 50px;
+    }
+
+    .registration-form {
+        max-width: 400px;
+        height: 350px;
+        padding: 17px;
+    }
+
+    .registration-img {
+        max-width: 325px;
+        height: 350px;
+    }
+
+    .registration-form h2 {
+        font-size: 1.3rem;
+        margin-bottom: 15px;
+    }
+
+    .form-group {
+        margin-bottom: 17px;
+    }
+
+    .form-group label {
+        font-size: 0.91rem;
+    }
+
+    .form-group input[type="text"],
+    .form-group input[type="email"],
+    .form-group input[type="tel"] {
+        font-size: 0.81rem;
+        padding: 7px;
+    }
+
+    .gender-options label {
+        font-size: 0.85rem;
+    }
+
+    .registration-form button {
+        font-size: 1rem;
+        padding: 8px;
+    }
+}
+
+@media (max-width: 725px) {
+
+    h2 {
+        font-size: 1rem;
+    }
+
+    h3 {
+        font-size: 0.9rem;
+    }
+
+    .body-box {
+        position: relative;
+        top: 45px;
+    }
+
+    .footer {
+        position: relative;
+        top: 45px;
+    }
+
+    .heading-msg .quote {
+        font-size: 0.85rem;
+    }
+
+    .registration-form {
+        max-width: 280px;
+        height: 250px;
+        padding: 10px;
+    }
+
+    .registration-img {
+        max-width: 200px;
+        height: 250px;
+    }
+
+    .registration-form h2 {
+        font-size: 1rem;
+        margin-bottom: 10px;
+    }
+
+    .form-group {
+        margin-bottom: 10px;
+    }
+
+    .form-group label {
+        font-size: 0.8rem;
+    }
+
+    .form-group input[type="text"],
+    .form-group input[type="email"],
+    .form-group input[type="tel"] {
+        font-size: 0.7rem;
+        padding: 6px;
+    }
+
+    .gender-options label {
+        font-size: 0.7rem;
+    }
+
+    .registration-form button {
+        font-size: 1rem;
+        padding: 6px 30px;
+    }
+}
+
+@media (max-width: 450px) {
+    h2 {
+        font-size: 0.9rem;
+    }
+
+    h3 {
+        font-size: 0.8rem;
+    }
+
+    .body-box {
+        position: relative;
+        top: 40px;
+    }
+
+    .footer {
+        position: relative;
+        top: 40px;
+    }
+
+    .heading-msg .quote {
+        font-size: 0.75rem;
+    }
+
+    .registration-form {
+        max-width: 250px;
+        max-height: 250px;
+        padding: 5px;
+        border-radius: 4px;
+    }
+
+    .registration-img {
+        display: none;
+    }
+
+    .registration-form h2 {
+        font-size: 0.9rem;
+        margin-bottom: 13px;
+    }
+
+    .form-group {
+        margin-bottom: 10px;
+    }
+
+    .form-group label {
+        font-size: 0.75rem;
+    }
+
+    .form-group input[type="text"],
+    .form-group input[type="email"],
+    .form-group input[type="tel"] {
+        font-size: 0.65rem;
+        padding: 5px;
+    }
+
+    .gender-options label {
+        font-size: 0.65rem;
+    }
+
+    .registration-form button {
+        font-size: 0.9rem;
+        padding: 5px 30px;
+    }
+}
