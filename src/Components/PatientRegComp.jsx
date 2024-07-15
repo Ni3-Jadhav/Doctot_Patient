@@ -54,6 +54,7 @@ const PatientRegComp = () => {
 
                             <button type="submit">Submit</button>
                         </div>
+                        <p>Already Have Register ? Login Here →</p>
                     </form>
                 </div>
             </div>

@@ -51,7 +51,7 @@
 
 .registration-img {
     max-width: 400px;
-    height: 380px;
+    height: 400px;
     transition: max-width 0.3s ease-in-out, height 0.3s ease-in-out;
 }
 
@@ -69,7 +69,7 @@
     border-radius: 0px 5px 5px 0px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     max-width: 500px;
-    height: 380px;
+    height: 400px;
     transition: transform 0.3s ease-in-out, max-width 0.3s ease-in-out, height 0.3s ease-in-out, border-radius 0.3s ease-in-out;
 }
 
@@ -155,6 +155,12 @@
     transform: translateY(-3px);
 }
 
+.registration-form p {
+    text-align: center;
+    font-size: 0.85rem;
+    color: #040468;
+}
+
 @media (max-width: 1100px) {
     h2 {
         font-size: 1.2rem;
@@ -180,13 +186,13 @@
 
     .registration-form {
         max-width: 400px;
-        height: 350px;
+        height: 360px;
         padding: 17px;
     }
 
     .registration-img {
         max-width: 325px;
-        height: 350px;
+        height: 360px;
     }
 
     .registration-form h2 {
@@ -217,6 +223,10 @@
         font-size: 1rem;
         padding: 8px;
     }
+
+    .registration-form p {
+        font-size: 0.8rem;
+    }
 }
 
 @media (max-width: 725px) {
@@ -245,13 +255,13 @@
 
     .registration-form {
         max-width: 280px;
-        height: 250px;
+        height: 275px;
         padding: 10px;
     }
 
     .registration-img {
         max-width: 200px;
-        height: 250px;
+        height: 275px;
     }
 
     .registration-form h2 {
@@ -282,15 +292,19 @@
         font-size: 1rem;
         padding: 6px 30px;
     }
+
+    .registration-form p {
+        font-size: 0.7rem;
+    }
 }
 
 @media (max-width: 450px) {
     h2 {
-        font-size: 0.9rem;
+        font-size: 0.8rem;
     }
 
     h3 {
-        font-size: 0.8rem;
+        font-size: 0.7rem;
     }
 
     .body-box {
@@ -304,12 +318,12 @@
     }
 
     .heading-msg .quote {
-        font-size: 0.75rem;
+        font-size: 0.65rem;
     }
 
     .registration-form {
         max-width: 250px;
-        max-height: 250px;
+        max-height: 270px;
         padding: 5px;
         border-radius: 4px;
     }
@@ -345,5 +359,9 @@
     .registration-form button {
         font-size: 0.9rem;
         padding: 5px 30px;
+    }
+
+    .registration-form p {
+        font-size: 0.6rem;
     }
 }
