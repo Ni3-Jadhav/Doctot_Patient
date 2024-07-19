@@ -1,4 +1,9 @@
+import { useNavigate } from "react-router-dom";
+
 const FooterComp = () => {
+
+    const navigation = useNavigate();
+
     return (
         <>
             <footer class="footer">
@@ -15,10 +20,10 @@ const FooterComp = () => {
                     </div>
                     <div class="Service_box">
                         <p><strong>Account</strong></p>
-                        <p>Create Doctor's Account</p>
+                        <p onClick={ () => {navigation('/doctorReg')}}>Create Doctor's Account</p>
                         <p>Doctor Sign In</p>
                         <br />
-                        <p>Create Patient's Account</p>
+                        <p onClick={ () => {navigation('/patientReg')}}>Create Patient's Account</p>
                         <p>Patient Sign In</p>
                     </div>
                     <div class="Service_box">

@@ -1,10 +1,23 @@
-/* Patient Rag Form */
+/* Patient and Doctor Reg Form */
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: Verdana, sans-serif;
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+li {
+    list-style-type: none;
+}
+
+button {
+    cursor: pointer;
 }
 
 .footer {
@@ -49,9 +62,10 @@
     align-items: center;
 }
 
+/* patient reg component */
 .registration-img {
     max-width: 400px;
-    height: 400px;
+    height: 450px;
     transition: max-width 0.3s ease-in-out, height 0.3s ease-in-out;
 }
 
@@ -60,8 +74,8 @@
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     width: 100%;
     height: 100%;
+    transition: transform 0.3s ease-in-out, max-width 0.3s ease-in-out, height 0.3s ease-in-out, border-radius 0.3s ease-in-out;
 }
-
 .registration-form {
     background: rgba(240, 252, 255, 0.884);
     /* Light blue background with opacity */
@@ -69,12 +83,41 @@
     border-radius: 0px 5px 5px 0px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     max-width: 500px;
-    height: 400px;
+    height: 450px;
     transition: transform 0.3s ease-in-out, max-width 0.3s ease-in-out, height 0.3s ease-in-out, border-radius 0.3s ease-in-out;
 }
 
-.registration-form:hover {
-    transform: scale(1.02);
+/* doctor reg component */
+.dr-reg-img {
+    max-width: 450px;
+    height: 550px;
+    transition: max-width 0.3s ease-in-out, height 0.3s ease-in-out;
+}
+
+.dr-reg-img img {
+    border-radius: 0px 5px 5px 0px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    height: 100%;
+    transition: transform 0.3s ease-in-out, max-width 0.3s ease-in-out, height 0.3s ease-in-out, border-radius 0.3s ease-in-out;
+}
+
+.dr-reg-form {
+    background: rgba(240, 252, 255, 0.884);
+    /* Light blue background with opacity */
+    padding: 20px;
+    border-radius: 5px 0px 0px 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+    height: 550px;
+    transition: transform 0.3s ease-in-out, max-width 0.3s ease-in-out, height 0.3s ease-in-out, border-radius 0.3s ease-in-out;
+}
+
+.registration-form:hover,
+.registration-img img:hover,
+.dr-reg-form:hover,
+.dr-reg-img img:hover {
+    transform: scale(1.01);
     border-radius: 5px;
 }
 
@@ -93,6 +136,32 @@
 
 .form-group {
     margin-bottom: 20px;
+    position: relative;
+}
+
+#speciality-dropdown {
+    width: 92%;
+    max-height: 150px;
+    margin: 0 4%;
+    padding: 8px;
+    position: absolute;
+    display: block;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #ecf1ff;
+    transition: all 0.5s ease;
+    top: 50px;
+    z-index: 2;
+    overflow: auto;
+}
+
+#speciality-dropdown li {
+    font-size: 0.95rem;
+    line-height: 2;
+    cursor: pointer;
+    margin: 5px 0px;
+    font-family: Verdana, sans-serif;
+    color: #000000;
 }
 
 .form-group label {
@@ -105,7 +174,8 @@
 
 .form-group input[type="text"],
 .form-group input[type="email"],
-.form-group input[type="tel"] {
+.form-group input[type="tel"],
+.form-group input[type="password"] {
     width: 92%;
     margin: 0 4%;
     padding: 8px;
@@ -117,7 +187,8 @@
 
 .form-group input[type="text"]:focus,
 .form-group input[type="email"]:focus,
-.form-group input[type="tel"]:focus {
+.form-group input[type="tel"]:focus,
+.form-group input[type="password"]:focus {
     border: 1px solid #448f74;
     outline: none;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
@@ -129,18 +200,57 @@
     justify-content: space-around;
 }
 
-
 .gender-options label {
     color: #010136;
     font-size: 0.91rem;
     text-align: center;
 }
 
+.last-group {
+    margin-bottom: 5px;
+}
+.form-checkbox #terms{
+    display: block;
+}
+.form-checkbox {
+    width: 92%;
+    margin: 0 4%;
+    position: relative;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.registration-form .form-checkbox p {
+    color: #010136;
+}
+
+.registration-form .form-checkbox a {
+    color: #040468;
+}
+
+#term-dropdown {
+    width: 90%;
+    max-height: 150px;
+    margin: 0 5%;
+    position: absolute;
+    display: block;
+    text-align: justify;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #ecf1ff;
+    transition: all 0.5s ease;
+    top: 30px;
+    z-index: 2;
+    overflow: auto;
+}
+
 .registration-form button {
     display: block;
-    width: 46%;
-    margin: 0% 2%;
+    width: 92%;
+    margin: 0% 4%;
     padding: 10px;
+
     background-color: #448f74;
     color: #fffdf3;
     border: none;
@@ -156,12 +266,14 @@
 }
 
 .registration-form p {
+    padding: 10px;
     text-align: center;
     font-size: 0.85rem;
+    cursor: pointer;
     color: #040468;
 }
 
-@media (max-width: 1100px) {
+@media (max-width: 1000px) {
     h2 {
         font-size: 1.2rem;
     }
@@ -185,14 +297,25 @@
     }
 
     .registration-form {
-        max-width: 400px;
-        height: 360px;
+        max-width: 425px;
+        height: 400px;
         padding: 17px;
     }
 
     .registration-img {
-        max-width: 325px;
-        height: 360px;
+        max-width: 350px;
+        height: 400px;
+    }
+
+    .dr-reg-form {
+        max-width: 425px;
+        height: 475px;
+        padding: 17px;
+    }
+
+    .dr-reg-img {
+        max-width: 350px;
+        height: 475px;
     }
 
     .registration-form h2 {
@@ -210,13 +333,36 @@
 
     .form-group input[type="text"],
     .form-group input[type="email"],
-    .form-group input[type="tel"] {
+    .form-group input[type="tel"],
+    .form-group input[type="password"] {
         font-size: 0.81rem;
         padding: 7px;
     }
 
     .gender-options label {
         font-size: 0.85rem;
+    }
+
+    .last-group {
+        margin-bottom: 5px;
+    }
+
+    #speciality-dropdown {
+        padding: 9px;
+        position: absolute;
+        top: 50px;
+        max-height: 125px;
+    }
+
+    #speciality-dropdown li {
+        font-size: 0.84rem;
+    }
+
+    #term-dropdown {
+        padding: 9px;
+        position: absolute;
+        top: 25px;
+        max-height: 125px;
     }
 
     .registration-form button {
@@ -226,6 +372,7 @@
 
     .registration-form p {
         font-size: 0.8rem;
+        padding: 8px;
     }
 }
 
@@ -254,14 +401,25 @@
     }
 
     .registration-form {
-        max-width: 280px;
-        height: 275px;
+        max-width: 300px;
+        height: 325px;
         padding: 10px;
     }
 
     .registration-img {
-        max-width: 200px;
-        height: 275px;
+        max-width: 225px;
+        height: 325px;
+    }
+
+    .dr-reg-form {
+        max-width: 300px;
+        height: 385px;
+        padding: 10px;
+    }
+
+    .dr-reg-img {
+        max-width: 250px;
+        height: 385px;
     }
 
     .registration-form h2 {
@@ -279,7 +437,8 @@
 
     .form-group input[type="text"],
     .form-group input[type="email"],
-    .form-group input[type="tel"] {
+    .form-group input[type="tel"],
+    .form-group input[type="password"] {
         font-size: 0.7rem;
         padding: 6px;
     }
@@ -290,11 +449,51 @@
 
     .registration-form button {
         font-size: 1rem;
-        padding: 6px 30px;
+        padding: 6px;
+    }
+
+    .last-group {
+        margin-bottom: 5px;
+    }
+
+    #speciality-dropdown {
+        padding: 6px;
+        position: absolute;
+        top: 40px;
+        max-height: 100px;
+    }
+
+    #speciality-dropdown li {
+        font-size: 0.74rem;
+        line-height: 1.7;
+    }
+
+    #term-dropdown {
+        padding: 6px;
+        position: absolute;
+        top: 15px;
+        max-height: 125px;
     }
 
     .registration-form p {
         font-size: 0.7rem;
+        padding: 6px;
+    }
+}
+
+@media (max-width:575px) {
+    .registration-img {
+        display: none;
+    }
+
+    .registration-form {
+        height: 325px;
+        border-radius: 5px;
+    }
+
+    .dr-reg-form {
+        border-radius: 5px;
+        max-height: 400px;
     }
 }
 
@@ -323,17 +522,22 @@
 
     .registration-form {
         max-width: 250px;
-        max-height: 270px;
+        max-height: 300px;
+        overflow: hidden;
         padding: 5px;
         border-radius: 4px;
     }
 
-    .registration-img {
-        display: none;
+    .dr-reg-form {
+        max-width: 250px;
+        max-height: 350px;
+        overflow: hidden;
+        padding: 5px;
+        border-radius: 4px;
     }
 
     .registration-form h2 {
-        font-size: 0.9rem;
+        font-size: 0.85rem;
         margin-bottom: 13px;
     }
 
@@ -342,12 +546,13 @@
     }
 
     .form-group label {
-        font-size: 0.75rem;
+        font-size: 0.7rem;
     }
 
     .form-group input[type="text"],
     .form-group input[type="email"],
-    .form-group input[type="tel"] {
+    .form-group input[type="tel"],
+    .form-group input[type="password"] {
         font-size: 0.65rem;
         padding: 5px;
     }
@@ -357,11 +562,35 @@
     }
 
     .registration-form button {
-        font-size: 0.9rem;
-        padding: 5px 30px;
+        font-size: 0.8rem;
+        padding: 5px;
+    }
+
+    .last-group {
+        margin-bottom: 5px;
+    }
+
+    #speciality-dropdown {
+        padding: 4px;
+        position: absolute;
+        top: 40px;
+        max-height: 75px;
+    }
+
+    #speciality-dropdown li {
+        font-size: 0.64rem;
+        line-height: 1.5;
+    }
+
+    #term-dropdown {
+        padding: 4px;
+        position: absolute;
+        top: 15px;
+        max-height: 100px;
     }
 
     .registration-form p {
         font-size: 0.6rem;
+        padding: 3px;
     }
 }

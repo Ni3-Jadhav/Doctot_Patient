@@ -20,21 +20,21 @@ const PatientRegComp = () => {
                         <div class="form-box">
                             <div class="form-group">
                                 <label for="fullName">Full Name</label>
-                                <input type="text" id="fullName" name="fullName" required />
+                                <input type="text" id="fullName" name="fullName" required placeholder='Enter Full Name'/>
                             </div>
                             <div class="form-group">
                                 <label for="email">Email</label>
-                                <input type="email" id="email" name="email" required />
+                                <input type="email" id="email" name="email" required placeholder='Enter Email ID'/>
                             </div>
                         </div>
                         <div class="form-box">
                             <div class="form-group">
                                 <label for="phone">Phone Number</label>
-                                <input type="tel" id="phone" name="phone" required />
+                                <input type="tel" id="phone" name="phone" required placeholder='Enter Phone no'/>
                             </div>
                             <div class="form-group">
                                 <label for="age"> Age </label>
-                                <input type="text" id="age" name="age" />
+                                <input type="text" id="age" name="age" placeholder='Enter Age'/>
                             </div>
                         </div>
 
@@ -49,11 +49,15 @@ const PatientRegComp = () => {
                         <div class="form-box">
                             <div class="form-group">
                                 <label for="address">Address</label>
-                                <input type="text" id="address" name="address" required />
+                                <input type="text" id="address" name="address" required placeholder='Enter Address'/>
                             </div>
-
-                            <button type="submit">Submit</button>
+                            <div class="form-group">
+                                <label for="password">PassWord</label>
+                                <input type="password" id="password" name="password" required placeholder='Create PassWord'/>
+                            </div>
+                           
                         </div>
+                        <button type="submit">Submit</button>
                         <p>Already Have Register ? Login Here →</p>
                     </form>
                 </div>

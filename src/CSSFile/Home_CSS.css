@@ -640,8 +640,9 @@ body {
     }
 
     .box_2 h2 {
-        padding: 20px 20px 15px;
-        line-height: 1.9;
+        padding: 50px 5px 5px;
+        line-height: 1.4;
+        font-size: 0.75rem;
     }
 
     .box_2_content {

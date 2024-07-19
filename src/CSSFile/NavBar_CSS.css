@@ -505,6 +505,7 @@ a {
     font-size: 0.85rem;
     line-height: 2;
     color: #010136;
+    cursor: pointer;
 }
 
 .copyright {
