@@ -1,9 +1,9 @@
 import imgUrl from '../images/healthCenter2.jpeg';
-import '../CSSFile/About_CSS.css';
+import "../CSSFile/Pages_CSS.css";
 const AboutComp = () => {
     return (
         <>
-            <div class="about-container">
+            <div class="body-page">
                 <div class="about-header">
                     <h1 id='up'> HealPoint Medical Clinic</h1>
                     <p id='msg'><strong> "Connecting patients, doctors, and health centers with seamless ease."</strong></p>
