@@ -18,7 +18,7 @@ const HomeComp = () => {
                             <button type="button">Schedule Consultation <i class="fa-solid fa-arrow-right-to-bracket"></i></button>
                         </div>
                     </div>
-                    <img src={imgUrl} alt="" srcset=""/>
+                    <img src={imgUrl} alt="" srcset="" />
                 </div>
                 <div class="box_1">
                     <h2>Medical Checkup Camp</h2>
@@ -100,6 +100,40 @@ const HomeComp = () => {
 
                     </div>
                     <button type="button">View All →</button>
+                </div>
+                <div class="news-feed-container">
+                    <h2 class="news-feed-heading" id="news-feed" >News Feed</h2>
+                    <div class="news-feed-slideshow">
+                        <div class="news-feed-slide active">
+                            <p class="news-teller">Dr. Jane Doe</p>
+                            <p class="news-content">New vaccine available for the seasonal flu. Ensure to get vaccinated to protect yourself and your loved ones. Stay healthy!</p>
+                            <p class="news-time">1 day ago</p>
+                        </div>
+
+                        <div class="news-feed-slide">
+                            <p class="news-teller">Health Ministry</p>
+                            <p class="news-content">Government announces new health guidelines to combat the spread of the latest virus strain. Follow the guidelines strictly for your safety.</p>
+                            <p class="news-time">2 days ago</p>
+                        </div>
+                        <div class="news-feed-slide">
+                            <p class="news-teller">Health Exp...</p>
+                            <p class="news-content">Government announces new health guidelines to combat the spread of the latest virus strain. Follow the guidelines strictly for your safety.</p>
+                            <p class="news-time">2 days ago</p>
+                        </div>
+                        <div class="news-feed-slide">
+                            <p class="news-teller">Exp..</p>
+                            <p class="news-content">Government announces new health guidelines to combat the spread of the latest virus strain. Follow the guidelines strictly for your safety.</p>
+                            <p class="news-time">2 days ago</p>
+                        </div>
+                        <div class="news-feed-slide">
+                            <p class="news-teller">Exp 2...</p>
+                            <p class="news-content">Government announces new health guidelines to combat the spread of the latest virus strain. Follow the guidelines strictly for your safety.</p>
+                            <p class="news-time">2 days ago</p>
+                        </div>
+
+                    </div>
+                    <button class="news-nav-btn prev-btn">←</button>
+                    <button class="news-nav-btn next-btn">→</button>
                 </div>
             </div>
         </>
