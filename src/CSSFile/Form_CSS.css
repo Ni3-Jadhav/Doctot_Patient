@@ -7,6 +7,7 @@
     font-family: Verdana, sans-serif;
 }
 
+
 a {
     text-decoration: none;
     cursor: pointer;
@@ -20,10 +21,7 @@ button {
     cursor: pointer;
 }
 
-.footer {
-    position: relative;
-    top: 55px;
-}
+
 
 .body-box {
     background-image: url('../images/healthCenter2.jpeg');
@@ -33,6 +31,7 @@ button {
     background-repeat: no-repeat;
     position: relative;
     top: 55px;
+    margin-bottom: 50px;
     filter: brightness(0.9);
 }
 
@@ -291,10 +290,7 @@ button {
         top: 50px;
     }
 
-    .footer {
-        position: relative;
-        top: 50px;
-    }
+ 
 
     .registration-form {
         max-width: 425px;
@@ -391,10 +387,7 @@ button {
         top: 45px;
     }
 
-    .footer {
-        position: relative;
-        top: 45px;
-    }
+    
 
     .heading-msg .quote {
         font-size: 0.85rem;
@@ -511,11 +504,7 @@ button {
         top: 40px;
     }
 
-    .footer {
-        position: relative;
-        top: 40px;
-    }
-
+   
     .heading-msg .quote {
         font-size: 0.65rem;
     }

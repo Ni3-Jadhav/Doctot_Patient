@@ -308,6 +308,7 @@ input[type=checkbox] {
     align-items: center;
 }
 
+.list_2 li a,
 .list_2 li {
     padding: 5px;
     width: 20%;
@@ -469,7 +470,7 @@ a {
 .footer {
     width: 100%;
     position: relative;
-    top: 75px;
+    top: 0px;
 }
 
 .top_btn {
@@ -512,6 +513,7 @@ a {
     font-size: 0.85rem;
     line-height: 2;
     color: #010136;
+    cursor: pointer;
 }
 
 .copyright {

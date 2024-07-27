@@ -2,6 +2,9 @@ import '../CSSFile/Home_CSS.css';
 import imgUrl from '../images/consel_1.jpeg';
 
 const HomeComp = () => {
+
+
+    
     return (
         <>
             <div class="home-page" >
