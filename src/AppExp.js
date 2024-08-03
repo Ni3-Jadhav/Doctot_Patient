@@ -38,7 +38,7 @@ const AppExp =()=> {
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentIndex((currentIndex + 1) % totalSlides);
-      console.log('1');
+     
     }, 6000);
 
     return () => clearInterval(interval);

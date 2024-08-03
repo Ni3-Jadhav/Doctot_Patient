@@ -1,9 +1,50 @@
+import { useEffect, useState } from 'react';
 import '../CSSFile/Home_CSS.css';
 import imgUrl from '../images/consel_1.jpeg';
 
 const HomeComp = () => {
 
+    const [currentIndex , setCurrentIndex] = useState(0);
 
+    const slides =[
+        {
+            newsTeller : 'xyz',
+            newsContent :'fist news 111',
+            timeOfPost : '1 day'
+        },
+        {
+            newsTeller : 'abc',
+            newsContent :'second news 222',
+            timeOfPost : '2 days'
+        },
+        {
+            newsTeller : 'aaa',
+            newsContent :'third news 333',
+            timeOfPost : '20 hours'
+        },
+        {
+            newsTeller : 'dr.hh',
+            newsContent :'fourth news 444',
+            timeOfPost : '3 days'
+        }
+    ];
+
+    const totalSlides =slides.length;
+
+    useEffect (()=>{
+        const slidesInterval = setInterval(()=>{
+            setCurrentIndex((currentIndex + 1)% totalSlides);
+        },6500);
+        return () => clearInterval(slidesInterval);
+    },[currentIndex ,totalSlides]);
+
+    const handleNextSlide = () =>{
+        setCurrentIndex((currentIndex + 1) % totalSlides);
+    };
+
+    const handlePreviuosSlide = () => {
+        setCurrentIndex((currentIndex -1 + totalSlides) % totalSlides);
+    };
     
     return (
         <>
@@ -107,36 +148,17 @@ const HomeComp = () => {
                 <div class="news-feed-container">
                     <h2 class="news-feed-heading" id="news-feed" >News Feed</h2>
                     <div class="news-feed-slideshow">
-                        <div class="news-feed-slide active">
-                            <p class="news-teller">Dr. Jane Doe</p>
-                            <p class="news-content">New vaccine available for the seasonal flu. Ensure to get vaccinated to protect yourself and your loved ones. Stay healthy!</p>
-                            <p class="news-time">1 day ago</p>
-                        </div>
+                       { slides.map((slide ,index) =>(
+                         <div key={index} class={`news-feed-slide ${index === currentIndex ? 'active' : ''}`}>
+                         <p class="news-teller">{slide.newsTeller}</p>
+                         <p class="news-content">{slide.newsContent}</p>
+                         <p class="news-time">{slide.timeOfPost} ago</p>
+                     </div>
 
-                        <div class="news-feed-slide">
-                            <p class="news-teller">Health Ministry</p>
-                            <p class="news-content">Government announces new health guidelines to combat the spread of the latest virus strain. Follow the guidelines strictly for your safety.</p>
-                            <p class="news-time">2 days ago</p>
-                        </div>
-                        <div class="news-feed-slide">
-                            <p class="news-teller">Health Exp...</p>
-                            <p class="news-content">Government announces new health guidelines to combat the spread of the latest virus strain. Follow the guidelines strictly for your safety.</p>
-                            <p class="news-time">2 days ago</p>
-                        </div>
-                        <div class="news-feed-slide">
-                            <p class="news-teller">Exp..</p>
-                            <p class="news-content">Government announces new health guidelines to combat the spread of the latest virus strain. Follow the guidelines strictly for your safety.</p>
-                            <p class="news-time">2 days ago</p>
-                        </div>
-                        <div class="news-feed-slide">
-                            <p class="news-teller">Exp 2...</p>
-                            <p class="news-content">Government announces new health guidelines to combat the spread of the latest virus strain. Follow the guidelines strictly for your safety.</p>
-                            <p class="news-time">2 days ago</p>
-                        </div>
-
+                       ))}
                     </div>
-                    <button class="news-nav-btn prev-btn">←</button>
-                    <button class="news-nav-btn next-btn">→</button>
+                    <button class="news-nav-btn prev-btn" onClick={handlePreviuosSlide}>←</button>
+                    <button class="news-nav-btn next-btn" onClick={handleNextSlide}>→</button>
                 </div>
             </div>
         </>
